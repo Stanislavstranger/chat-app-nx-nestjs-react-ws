@@ -9,13 +9,13 @@ export enum UserStatus {
 }
 
 export interface IUser {
-  id: string;
+  id?: string;
   username: string;
   email: string;
-  passwordHash: string;
+  passwordHash?: string;
   profilePicture?: string;
   role: UserRole;
-  status: UserStatus;
-  createdAt: Date;
-  updatedAt: Date;
+  status?: UserStatus;
+  createdAt?: Date;
+  updatedAt?: Date;
 }
